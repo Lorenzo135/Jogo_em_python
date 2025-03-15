@@ -84,3 +84,4 @@ else:
 #Adicinar algo sobre tupla, lista ou dicionário.
 
 print('sim')
+print('não')
