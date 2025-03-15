@@ -81,5 +81,6 @@ if Top == 'S':
 else:
     print ('\nVolte sempre!!\n')
 
-#Adicinar algo sobre tupla, lista ou dicionário
+#Adicinar algo sobre tupla, lista ou dicionário.
 
+print('sim')
