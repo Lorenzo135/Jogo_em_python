@@ -19,6 +19,11 @@
     margin-right: 5%;
 }
 
+
+.jogos{
+    display: grid;
+}
+
 .caixa_mine{
     width: 20%;
     height: 520px;
@@ -33,3 +38,47 @@
     height: 100%;
 }
 
+
+.caixa_subnautica{
+    width: 20%;
+    height: 520px;
+    border: black solid;
+    margin-left: 7%;
+    margin-top: 3%;
+
+}
+
+.caixa_subnautica img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.caixa_spore{
+    width: 20%;
+    height: 520px;
+    border: black solid;
+    margin-left: 7%;
+    margin-top: 3%;
+
+}
+
+.caixa_spore img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.caixa_astroneer{
+    width: 20%;
+    height: 520px;
+    border: black solid;
+    margin-left: 7%;
+    margin-top: 3%;
+
+}
+
+.caixa_astroneer img{
+    width: 100%;
+    height: 100%;
+}
