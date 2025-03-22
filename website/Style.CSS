@@ -23,16 +23,27 @@
 /* AQUI */
 /* AQUI */
 /* AQUI */
-.jogos{
+
+/* .jogos{
+
+} */
+
+#conteiner{
     display: grid;
+    grid-template-columns: 520px 520px;
+    grid-template-rows: 450px;
+    justify-content: center;
+    justify-items: center;
+    gap: 13%;
 }
 
 .caixa{
-    width: 20%;
+    width: 320px;
     height: 520px;
     border: black solid;
     margin-left: 7%;
-    margin-top: 3%;
+    margin-top: 7%;
+    margin-right: 7%;
 
 }
 
@@ -42,5 +53,5 @@
 }
 
 .caixa:hover{
-    width: 50%;
+    width: 990px;
 }
