@@ -1,3 +1,4 @@
+import random
 nome_do_personagem = input("digite o nome do seu personagem: ")
 print(f"Bem-vindo ao jogo {nome_do_personagem}!!")
 
@@ -81,7 +82,24 @@ if Top == 'S':
 else:
     print ('\nVolte sempre!!\n')
 
+
+Sorte= input('Após esse "jogo" você gostaria de testar sua sorte? Responda com S ou N. ')
+opcoes=["cara","coroa"]
+escolha=(random.choice(opcoes))
+
+if Sorte == "S":
+    escolhido= input("Agora, escolha cara ou coroa: ")
+    print (f"Caiu {escolha}.")
+    if escolhido== (escolha):
+        print("Você está com sorte hoje!")
+        print("Volte sempre!!")
+    elif escolhido != (escolha):
+        print("Você está com azar!")
+        print("Volte sempre!!")
+else:
+    print("Volte sempre!!")
+
+
+
 #Adicinar algo sobre tupla, lista ou dicionário.
 
-print('sim')
-print('não')
