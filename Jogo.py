@@ -46,60 +46,66 @@ while True:
     elif numero_escolhido == "9":
         print('\nCuphead, é um jogo de plataforma, pode jogar com 2 pessoas, você e seu amigo, o objetivo é derrotar todos os bosses. ')
         print('Quando você derrota um boss você recebe uma nota, de acordo com a dificuldade, especiais, tempo e parry.\n')
-    elif numero_escolhido.lower() =="n":
+    elif numero_escolhido.lower() == "n":
         break
     else:
         print("Está opção não é válida.")
 
 print('\n===================================================\n')
 
-Top=input('Após essa descrição, você gostaria de fazer um top dos melhores jogos de acordo com a descrição? Responda com S ou N: ')
+
+while True:
+    top = input('Após essa descrição, você gostaria de fazer um top dos melhores jogos de acordo com a descrição? Responda com S ou N: ').upper()
+    if top == 'S':
+        primeiro = input('\nDigite o primeiro jogo do placar: ')
+        segundo = input('Digite o segundo jogo do placar: ')
+        terceiro = input('Digite o terceiro jogo do placar: ')
+
+        placar1 = {'número 1': 'nº 1:', 'Jogo':{primeiro}}
+        placar2 = {'número 2': 'nº 2:', 'Jogo':{segundo}}
+        placar3 = {'número 3': 'nº 3:', 'Jogo':{terceiro}}
+
+        print('\nSeu top ficou assim:\n')
+
+        for valor in placar1.values():
+            print(valor)
+
+        for valor in placar2.values():
+            print(valor)
+        
+        for valor in placar3.values():
+            print(valor)
+
+        print('\nVolte sempre!!\n')
+    elif top == "N":
+        break
+    else:
+        print("Está opção não é válida.")
 
 
-if Top == 'S':
-    primeiro = input('\nDigite o primeiro jogo do placar: ')
-    segundo = input('Digite o segundo jogo do placar: ')
-    terceiro = input('Digite o terceiro jogo do placar: ')
+while True:
+    sorte = input('Após esse "jogo" você gostaria de testar sua sorte? Responda com S ou N. ').upper()
+    opcoes = ["cara","coroa"]
+    escolha = random.choice(opcoes)
 
-    placar1= {'número 1': 'nº 1:', 'Jogo':{primeiro}}
-    placar2= {'número 2': 'nº 2:', 'Jogo':{segundo}}
-    placar3= {'número 3': 'nº 3:', 'Jogo':{terceiro}}
-
-    Troca = Top + 'a'
-
-    print('\nSeu top ficou assim:\n')
-
-    for valor in placar1.values():
-        print(valor)
-
-    for valor in placar2.values():
-        print(valor)
-    
-    for valor in placar3.values():
-        print(valor)
-
-    print ('\nVolte sempre!!\n')
-else:
-    print ('\nVolte sempre!!\n')
+    if sorte == "S":
+        escolhido = input("Agora, escolha cara ou coroa: ").lower()
+        print(f"Caiu {escolha}.")
+        if escolhido == escolha:
+            print("Você está com sorte hoje!")
+            print("Volte sempre!!")
+        elif escolhido != escolha:
+            print("Você está com azar!")
+            print("Volte sempre!!")
+    elif sorte == "N":
+        break
+    else:
+        print("Está opção não é válida.")
+        
 
 
-Sorte= input('Após esse "jogo" você gostaria de testar sua sorte? Responda com S ou N. ')
-opcoes=["cara","coroa"]
-escolha=(random.choice(opcoes))
-
-if Sorte == "S":
-    escolhido= input("Agora, escolha cara ou coroa: ")
-    print (f"Caiu {escolha}.")
-    if escolhido== (escolha):
-        print("Você está com sorte hoje!")
-        print("Volte sempre!!")
-    elif escolhido != (escolha):
-        print("Você está com azar!")
-        print("Volte sempre!!")
-else:
-    print("Volte sempre!!")
-
-
+# for i in range(-3,8,2):
+#     print(i)
 
 #Adicinar algo sobre tupla, lista ou dicionário.
 
