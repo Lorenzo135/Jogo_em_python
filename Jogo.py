@@ -102,36 +102,7 @@ while True:
         
 
 
-print("Será que você está realmente com sorte?? ")
-while True:
-    sorte_2 = input("Se você acha que está com sorte, vamos fazer outro teste? ").upper()
-    if sorte_2 == "S":
-        print("Agora, você vai escolher 4 números. Os 2 primeiros serão sobre a sorte, e o terceiro vai ser o resultado final é um segredo. ")
-        n1 = input("Digite um número entre 0 até 6: ")
-        n2 = input("Agora, digite um número par entre 6 até 11: ")
-        n3 = input("Depois desse processo, digite o resultado final: ")
-        n4 = input(f"Digite um número entre seu primeiro número e o seu segundo número. Que são respectivamente {n1} e {n2}: ")
-        for i in range(n1,n2,n4):
-            if i == n3:
-                print("Você realmente está com sorte.")
-                print("Volte sempre!!!")
-            elif i != n3:
-                print("Você está com azar.")
-                print("Volte sempre!!!")
-    elif sorte_2 == "N":
-        break
-    else:
-        print("Está opção não é válida./n")
 
 
 
-
-
-
-
-
-# for i in range(-3,8,2):
-#     print(i)
-
-#Adicinar algo sobre tupla, lista ou dicionário.
 
